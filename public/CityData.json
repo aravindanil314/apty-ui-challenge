@@ -1,0 +1,50 @@
+[
+  {
+    "id": 0,
+    "name": "Khartoum",
+    "tags": ["Wellington", "Tianjin"],
+    "desc": "Aenean lacinia bibendum nulla sed consectetur."
+  },
+  {
+    "id": 1,
+    "name": "Santa Clara",
+    "tags": ["Salt Lake City", "Seville"],
+    "desc": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et."
+  },
+  {
+    "id": 2,
+    "name": "Bengaluru",
+    "tags": ["Puebla"],
+    "desc": "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus."
+  },
+  {
+    "id": 3,
+    "name": "Portland",
+    "tags": ["Sacramento", "Osaka", "Astana"],
+    "desc": "Tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus."
+  },
+  {
+    "id": 4,
+    "name": "Fairbanks",
+    "tags": ["Belgrade", "Cali", "Stockholm"],
+    "desc": "Pellentesque ornare sem lacinia quam venenatis vestibulum."
+  },
+  {
+    "id": 5,
+    "name": "Sofia",
+    "tags": ["Trondheim", "Xian"],
+    "desc": "Pellentesque ornare sem lacinia quam venenatis vestibulum."
+  },
+  {
+    "id": 6,
+    "name": "Belfast",
+    "tags": ["Aarhus", "Ankara"],
+    "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla."
+  },
+  {
+    "id": 7,
+    "name": "Pune",
+    "tags": ["Sylhet"],
+    "desc": "Mauris condimentum nibh, ut fermentum massa justo sit amet risus."
+  }
+]
