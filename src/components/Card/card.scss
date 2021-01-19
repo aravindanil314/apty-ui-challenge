@@ -141,6 +141,7 @@
       @media only screen and (max-width: 767px) and (min-width: 300px) {
         display: flex;
         flex-direction: row;
+        align-items: center;
         height: auto;
         img {
           width: 60px;
@@ -178,6 +179,13 @@
             height: auto;
             margin-left: 15px;
             cursor: pointer;
+          }
+          span {
+            &:first-of-type {
+              img {
+                margin-left: 0;
+              }
+            }
           }
         }
       }
