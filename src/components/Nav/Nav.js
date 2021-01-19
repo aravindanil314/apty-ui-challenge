@@ -9,7 +9,28 @@ import Logout from "../../assets/images/log-out.svg";
 import NavButton from "./NavButton";
 import "./nav.scss";
 
-const Icons = [Home, Briefcase, Compass, Bell, Gear];
+const Icons = [
+  {
+    name: "home",
+    icon: Home,
+  },
+  {
+    name: "briefcase",
+    icon: Briefcase,
+  },
+  {
+    name: "compass",
+    icon: Compass,
+  },
+  {
+    name: "bell",
+    icon: Bell,
+  },
+  {
+    name: "gear",
+    icon: Gear,
+  },
+];
 
 const Nav = () => {
   return (
@@ -18,7 +39,10 @@ const Nav = () => {
       {Icons.map((value, index) => {
         return <NavButton key={index} icon={value} />;
       })}
-      <NavButton className="logout_btn" icon={Logout} />
+      <NavButton
+        className="logout_btn"
+        icon={{ name: "logout", icon: Logout }}
+      />
     </div>
   );
 };

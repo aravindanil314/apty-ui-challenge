@@ -25,7 +25,7 @@ const Card = (props) => {
         });
       }
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selected]);
 
   useEffect(() => {
@@ -35,7 +35,17 @@ const Card = (props) => {
   }, [state.selectedCard]);
 
   return (
-    <div className={selected ? `selected_card card` : `card`}>
+    <div
+      className={
+        state.layout === "list"
+          ? selected
+            ? `selected_card card list_layout`
+            : `card list_layout`
+          : selected
+          ? `selected_card card`
+          : `card`
+      }
+    >
       <div
         className={selected ? `selected select` : `select`}
         onClick={handleSelect}

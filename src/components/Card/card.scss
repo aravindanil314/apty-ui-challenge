@@ -137,6 +137,51 @@
         color: $secondary-grey;
       }
     }
+    &.list_layout {
+      @media only screen and (max-width: 767px) and (min-width: 300px) {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        img {
+          width: 60px;
+          height: 60px;
+        }
+        .badge_container {
+          display: none;
+        }
+        p {
+          display: none;
+        }
+        .select {
+          width: 15px;
+          height: 15px;
+          left: 15px;
+        }
+        .selected {
+          border: none;
+          display: block;
+          opacity: 1;
+          img {
+            display: block;
+            height: 15px;
+            width: 15px;
+          }
+        }
+        .card_footer {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          margin-top: 0px;
+          margin-left: auto;
+          img {
+            width: auto;
+            height: auto;
+            margin-left: 15px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
   }
 }
 
