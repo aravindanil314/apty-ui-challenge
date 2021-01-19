@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
+import { AppContext } from "../../Store";
 import Logo from "../../assets/images/logo.svg";
 import Menu from "../../assets/images/menu.svg";
 import GridView from "../../assets/images/grid-view-icon.svg";
@@ -6,9 +7,12 @@ import ListView from "../../assets/images/list-view-icon.svg";
 import "./header.scss";
 
 const Header = (props) => {
-  const [layout, setLayout] = useState("grid");
+  const { state, dispatch } = useContext(AppContext);
   const layoutChange = (layout) => {
-    setLayout(layout);
+    dispatch({
+      type: "change-layout",
+      payload: layout,
+    });
   };
   return (
     <div className="header">
@@ -19,7 +23,7 @@ const Header = (props) => {
       <h1>Discover great places to visit</h1>
       <div className="layout_change">
         <div
-          className={layout === "grid" ? "view_icon active" : "view_icon"}
+          className={state.layout === "grid" ? "view_icon active" : "view_icon"}
           onClick={() => {
             layoutChange("grid");
           }}
@@ -27,7 +31,7 @@ const Header = (props) => {
           <img src={GridView} alt="" />
         </div>
         <div
-          className={layout === "list" ? "view_icon active" : "view_icon"}
+          className={state.layout === "list" ? "view_icon active" : "view_icon"}
           onClick={() => {
             layoutChange("list");
           }}
